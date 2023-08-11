@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		84DF79442A85274400428EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF79432A85274400428EE5 /* AppDelegate.swift */; };
 		84DF79462A85274400428EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF79452A85274400428EE5 /* SceneDelegate.swift */; };
-		84DF79482A85274400428EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF79472A85274400428EE5 /* ViewController.swift */; };
+		84DF79482A85274400428EE5 /* EditPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF79472A85274400428EE5 /* EditPhotoVC.swift */; };
 		84DF794B2A85274400428EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF79492A85274400428EE5 /* Main.storyboard */; };
 		84DF794E2A85274400428EE5 /* PhotoEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84DF794C2A85274400428EE5 /* PhotoEditor.xcdatamodeld */; };
 		84DF79502A85274600428EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DF794F2A85274600428EE5 /* Assets.xcassets */; };
 		84DF79532A85274600428EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF79512A85274600428EE5 /* LaunchScreen.storyboard */; };
+		84DF79612A852A0B00428EE5 /* EditorVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF79602A852A0B00428EE5 /* EditorVC + Extension.swift */; };
+		84DF79672A8610D600428EE5 /* FilterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF79662A8610D600428EE5 /* FilterModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84DF79402A85274400428EE5 /* PhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DF79432A85274400428EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DF79452A85274400428EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84DF79472A85274400428EE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DF79472A85274400428EE5 /* EditPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoVC.swift; sourceTree = "<group>"; };
 		84DF794A2A85274400428EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84DF794D2A85274400428EE5 /* PhotoEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoEditor.xcdatamodel; sourceTree = "<group>"; };
 		84DF794F2A85274600428EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DF79522A85274600428EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DF79542A85274600428EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DF79602A852A0B00428EE5 /* EditorVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorVC + Extension.swift"; sourceTree = "<group>"; };
+		84DF79662A8610D600428EE5 /* FilterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,82 @@
 		84DF79422A85274400428EE5 /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
-				84DF79432A85274400428EE5 /* AppDelegate.swift */,
-				84DF79452A85274400428EE5 /* SceneDelegate.swift */,
-				84DF79472A85274400428EE5 /* ViewController.swift */,
-				84DF79492A85274400428EE5 /* Main.storyboard */,
-				84DF794F2A85274600428EE5 /* Assets.xcassets */,
-				84DF79512A85274600428EE5 /* LaunchScreen.storyboard */,
+				84DF79622A852E3A00428EE5 /* Components */,
+				84DF795D2A85298900428EE5 /* AppDelegate */,
+				84DF795B2A85295A00428EE5 /* EditorScene */,
+				84DF795F2A8529BE00428EE5 /* Storyboards */,
+				84DF795E2A8529AB00428EE5 /* Resource */,
 				84DF79542A85274600428EE5 /* Info.plist */,
 				84DF794C2A85274400428EE5 /* PhotoEditor.xcdatamodeld */,
 			);
 			path = PhotoEditor;
+			sourceTree = "<group>";
+		};
+		84DF795A2A85294C00428EE5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79602A852A0B00428EE5 /* EditorVC + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84DF795B2A85295A00428EE5 /* EditorScene */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79652A8610C300428EE5 /* Models */,
+				84DF795A2A85294C00428EE5 /* Extension */,
+				84DF795C2A85297400428EE5 /* View */,
+			);
+			path = EditorScene;
+			sourceTree = "<group>";
+		};
+		84DF795C2A85297400428EE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79472A85274400428EE5 /* EditPhotoVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84DF795D2A85298900428EE5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79452A85274400428EE5 /* SceneDelegate.swift */,
+				84DF79432A85274400428EE5 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84DF795E2A8529AB00428EE5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79512A85274600428EE5 /* LaunchScreen.storyboard */,
+				84DF794F2A85274600428EE5 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84DF795F2A8529BE00428EE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79492A85274400428EE5 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84DF79622A852E3A00428EE5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84DF79652A8610C300428EE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84DF79662A8610D600428EE5 /* FilterModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DF79482A85274400428EE5 /* ViewController.swift in Sources */,
+				84DF79482A85274400428EE5 /* EditPhotoVC.swift in Sources */,
+				84DF79672A8610D600428EE5 /* FilterModels.swift in Sources */,
 				84DF794E2A85274400428EE5 /* PhotoEditor.xcdatamodeld in Sources */,
+				84DF79612A852A0B00428EE5 /* EditorVC + Extension.swift in Sources */,
 				84DF79442A85274400428EE5 /* AppDelegate.swift in Sources */,
 				84DF79462A85274400428EE5 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HSYS6LMUSC;
+				DEVELOPMENT_TEAM = DYGLGH822J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoEditor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,12 +371,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.clubsPubs.clubsPubs.PhotoEditor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.photoEditor.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,7 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HSYS6LMUSC;
+				DEVELOPMENT_TEAM = DYGLGH822J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoEditor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -327,12 +400,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.clubsPubs.clubsPubs.PhotoEditor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.photoEditor.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
